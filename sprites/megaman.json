@@ -1,0 +1,36 @@
+{
+    "imagefile":"sprites/megaman.png",
+    "colorkey":[0 , 255, 0],
+    "SpriteGroups":
+    {
+        "IDLE":
+                [
+                    { "startx":  1,  "starty":0,  "width":21, "height":32},
+                    { "startx": 23,  "starty":0,  "width":21, "height":32}
+                ],
+        "RUN":
+                [
+                    { "startx": 45,  "starty":0,  "width":20, "height":32},
+                    { "startx": 66,  "starty":0,  "width":24, "height":32},
+                    { "startx": 91,  "starty":0,  "width":16, "height":32},
+                    { "startx":108,  "starty":0,  "width":21, "height":32}
+                ]
+    },
+
+    "Animations":
+    {
+        "STANDING":
+        [
+            {"spriteGroup":"IDLE", "spriteNumber":0, "duration":120, "nextFrame":1},
+            {"spriteGroup":"IDLE", "spriteNumber":1, "duration": 8, "nextFrame":0}
+        ],
+        "RUNNING":
+        [
+            {"spriteGroup":"RUN", "spriteNumber":0, "duration": 12, "nextFrame":1},
+            {"spriteGroup":"RUN", "spriteNumber":1, "duration":  8, "nextFrame":2},
+            {"spriteGroup":"RUN", "spriteNumber":2, "duration":  8, "nextFrame":3},
+            {"spriteGroup":"RUN", "spriteNumber":3, "duration":  8, "nextFrame":4},
+            {"spriteGroup":"RUN", "spriteNumber":2, "duration":  8, "nextFrame":1}
+        ]
+    }
+}
